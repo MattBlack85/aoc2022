@@ -6,7 +6,6 @@ def parse_file():
             if line == "\n":
                 food.append(partial_sum)
                 partial_sum = 0
-                continue
             else:
                 partial_sum += int(line.split("\n")[0])
     return food
